@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Shoppee</title>
   <link rel="stylesheet" href="./assets/css/base.css">
   <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -27,24 +27,98 @@
           <ul class="navbar-list">
             <li class="navbar-item navbar-item--separate">Kênh người bán</li>
             <li class="navbar-item navbar-item--separate">Trở thành người bán trên Shoppee</li>
-            <li class="navbar-item navbar-item--separate">Tải ứng dụng</li>
-            <li class="navbar-item">Kết nối</li>
-            <i class="fa-brands fa-facebook navbar-item_icon"></i>
-            <i class="fa-brands fa-instagram navbar-item_icon"></i>
+            <li class="navbar-item navbar-item--hasqr navbar-item--dont-hover  navbar-item--separate">
+
+              <div class="navbar-item--downloadapp navbar-item">Tải ứng dụng</div>
+              <div class="navbar-item_popup">
+                <img src="./assets/images/qr_code.png" alt="QRcode shoppee" class="navbar-item_popup_qr">
+                <div class="navbar-item_popup_groupimg">
+                  <img src="./assets/images/app_store.png" alt="" class="maketplace">
+                  <img src="./assets/images/google_play.png" alt="" class="maketplace">
+                  <img src="./assets/images/app_galerry.png" alt="" class="maketplace">
+                </div>
+              </div>
+            </li>
+            <li class="navbar-item navbar-item--dont-hover">Kết nối
+              <a href="https://www.facebook.com/ShopeeVN">
+                <i class="fa-brands fa-facebook navbar-item_icon">
+                </i>
+              </a>
+              <a href="https://www.instagram.com/Shopee_VN/">
+                <i class="fa-brands fa-instagram navbar-item_icon"></i>
+              </a>
+            </li>
           </ul>
           <ul class="navbar-list">
-            <li class="navbar-item">
+            <li class="navbar-item navbar-item--dont-hover navbar-item--hasinfo">
               <i class="fa-regular fa-bell navbar-item_icon"></i>
               <a href="" class="navbar-item_link">Thông báo</a>
+              <div class="header_notify">
+                <header class="header_notify-header">
+                  <h3>Thông báo mới nhận</h3>
+                </header>
+                <ul class="header_notify-list">
+                  <li class="header_notify-item">
+                    <a class="header_notify-link">
+                      <img src="https://cf.shopee.vn/file/14185f2e33d4984d85cf6e83ab8115ab_tn"
+                        class="header_notify-img">
+                      <div class="header_notify-info">
+                        <span class="header_notify-name">Hoàn tiền vào Ví ShopeePay thành công abcbsbcákdákdf</span>
+                        <span class="header_notify-desc">sadaào tài khoản .</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header_notify-item header_notify-item--viewed">
+                    <a class="header_notify-link">
+                      <img src="https://cf.shopee.vn/file/14185f2e33d4984d85cf6e83ab8115ab_tn"
+                        class="header_notify-img">
+                      <div class="header_notify-info">
+                        <span class="header_notify-name">Hoàn tiền vào Ví ShopeePay thành công</span>
+                        <span class="header_notify-desc">Yêu cầu hoàn tiền cho đơn hàng 22090 4W0S1W EKP được chấp nhận.
+                          Số tiền hoàn lại sẽ được chuyển vào tài khoản Ví ShopeePay của bạn.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header_notify-item">
+                    <a class="header_notify-link">
+                      <img src="https://cf.shopee.vn/file/14185f2e33d4984d85cf6e83ab8115ab_tn"
+                        class="header_notify-img">
+                      <div class="header_notify-info">
+                        <span class="header_notify-name">Hoàn tiền vào Ví ShopeePay thành công</span>
+                        <span class="header_notify-desc">Yêu cầu hoàn tiền cho đơn hàng 22090 4W0S1W EKP được chấp nhận.
+                          Số tiền hoàn lại sẽ được chuyển vào tài khoản Ví ShopeePay của bạn.</span>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="header_notify-item header_notify-item--viewed">
+                    <a class="header_notify-link">
+                      <img src="https://cf.shopee.vn/file/14185f2e33d4984d85cf6e83ab8115ab_tn"
+                        class="header_notify-img">
+                      <div class="header_notify-info">
+                        <span class="header_notify-name">Hoàn tiền vào Ví ShopeePay thành công</span>
+                        <span class="header_notify-desc">Yêu cầu hoàn tiền cho đơn hàng 22090 4W0S1W EKP được chấp nhận.
+                          Số tiền hoàn lại sẽ được chuyển vào tài khoản Ví ShopeePay của bạn.</span>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <footer class="header_notify-footer">
+                  <a href="" class="header_notify-footer-btn">Xem tất cả</a>
+                </footer>
+              </div>
             </li>
             <li class="navbar-item">
               <i class="fa-regular fa-circle-question navbar-item_icon"></i>
               <a href="" class="navbar-item_link">Hỗ trợ</a>
             </li>
-            <li class="navbar-item">
+            <li class="navbar-item navbar-item--haslang navbar-item--dont-hover">
               <i class="fa-solid fa-globe navbar-item_icon"></i>
               <a href="" class="navbar-item_link">Tiếng việt</a>
               <i class="fa-solid fa-chevron-down navbar-item_icon"></i>
+              <div class="navbar-item_lang">
+                <h4 class="navbar-item_lang--selected">Tiếng Việt</h4>
+                <h4>English</h4>
+              </div>
             </li>
             <li class="navbar-item navbar-item--separate">
               <a href="" class="navbar-item_link navbar-item_link--bold">Đăng Ký</a>
@@ -54,12 +128,90 @@
             </li>
           </ul>
         </nav>
+        <div class="main-bar">
+
+          <div class="main-bar_logo">
+            <image class="main-bar_logo" src="./assets/images/shoppee.png"></image>
+            <p class="main-bar_text">Shoppee</p>
+          </div>
+
+          <div class="search-bar_container">
+            <div class="search-bar">
+              <div class="search-bar_input">
+              </div>
+              <div class="search-bar_btn">
+                <i class="fa-solid fa-magnifying-glass search-bar_btn_icon"></i>
+              </div>
+            </div>
+            <ul class="navbar-list">
+              <li class="navbar-item1">Áo khoác</li>
+              <li class="navbar-item1">Dép</li>
+              <li class="navbar-item1">Túi xách nữ</li>
+              <li class="navbar-item1">Váy</li>
+              <li class="navbar-item1">Balo</li>
+              <li class="navbar-item1">Quần Jean Nam</li>
+              <li class="navbar-item1">Ốp iPhone</li>
+              <li class="navbar-item1">Dép Nam</li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-cart-shopping main-bar_cart cart_haspopup ">
+            <div class="cart_popup">
+              <img src="https://sknhatthuongyen.vn/images/emptycart.png" alt="" class="cart_popup--nohasproduct">
+              <div class="cart_popup_text">Chưa có sản phẩm</div>
+            </div>
+          </i>
+        </div>
       </div>
     </header>
     <div class="container">
 
     </div>
     <div class="footer">
+
+    </div>
+    <div class="modal">
+      <div class="modal_overlay">
+      </div>
+      <div class="modal_body">
+        <div class="modal_inner">
+          <!-- Authen Form -->
+          <div class="auth-form">
+            <div class="auth-form__header">
+              <h3 class="auth-form__heading">Đăng ký</h3>
+              <span class="auth-form__switch-btn">Đăng nhập</span>
+            </div>
+            <div class="auth-form__form">
+              <div class="auth-form__group">
+                <input placeholder="Nhập email của bạn..." type="text" class="auth-form__input">
+                <input placeholder="Nhập mật khẩu của bạn..." type="text" class="auth-form__input">
+                <input placeholder="Nhập lại mật khẩu..." type="text" class="auth-form__input">
+              </div>
+              <div class="auth-form__aside">
+                <p class="auth-form__policy-text">
+                  Bằng việc đăng kí, bận đã đống ý với Shoppee về
+                  <a href="" class="auth-form__policy--link">Điều khoản dịch vụ </a>
+                  &
+                  <a href="" class="auth-form__policy--link"> Chính sách bảo mật</a>
+                </p>
+              </div>
+              <div class="auth-form__controls">
+                <button class="btn">TRỞ LẠI</button>
+                <button class="btn btn--primary">ĐĂNG KÝ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="auth-form__socials">
+          <a href="" class=" btn_social btn--with-icon-facebook">
+            <i class="fa-brands fa-square-facebook "></i>
+            <p class="btn__textface">Kết nối với Facebook</p>
+          </a>
+          <a href="" class="btn_social btn--with-icon-google">
+            <i class="fa-brands fa-google"></i>
+            <p class="btn__textgg">Kết nối với Google</p>
+          </a>
+        </div>
+      </div>
 
     </div>
   </div>
