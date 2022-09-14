@@ -44,6 +44,17 @@ html {
   }
 }
 
+@keyframes growth {
+  from {
+    transform: scale(var(--growth-from));
+  }
+
+  to {
+    transform: scale(var(--growth-to));
+
+  }
+}
+
 /* Animation notification popup*/
 @keyframes nofifyPopup {
   from {
