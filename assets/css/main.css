@@ -463,6 +463,7 @@
   top: 0;
   bottom: 0;
   display: flex;
+  animation: fadeIn linear 0.1s;
 }
 
 .modal_overlay {
@@ -474,6 +475,8 @@
 }
 
 .modal_body {
+  --growth-from: 0.7;
+  --growth-to: 1;
   height: 500px;
   width: 500px;
   margin: auto;
@@ -484,6 +487,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  animation: growth linear 0.1s;
 
 }
 
