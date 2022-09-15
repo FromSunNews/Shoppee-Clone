@@ -5,6 +5,12 @@
   --text-color: #333;
   --border-color: #dbdbdb;
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+  --header-height: 120px;
+  --navbar-height: 34px;
+  --mainbar-height: calc(var(--header-height) - var(--navbar-height));
+
 }
 
 * {
