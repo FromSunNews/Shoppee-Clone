@@ -139,6 +139,17 @@
             <div class="search-bar">
               <input type="text" class="search-bar_input" placeholder="Nhập để tìm kiếm sản phẩm ...">
               </input>
+              <div class="search-bar_history">
+                <h3 class="search-bar_history-heading">Lịch sử tìm kiếm</h3>
+                <ul class="search-bar_history-list">
+                  <li class="search-bar_history-item">
+                    <a href="">Kem Dưỡng Da</a>
+                  </li>
+                  <li class="search-bar_history-item">
+                    <a href="">Kem Trị Mụn</a>
+                  </li>
+                </ul>
+              </div>
               <div class="search-bar_btn">
                 <i class="fa-solid fa-magnifying-glass search-bar_btn_icon"></i>
               </div>
@@ -154,12 +165,19 @@
               <li class="navbar-item1">Dép Nam</li>
             </ul>
           </div>
-          <i class="fa-solid fa-cart-shopping main-bar_cart cart_haspopup ">
-            <div class="cart_popup">
-              <img src="https://sknhatthuongyen.vn/images/emptycart.png" alt="" class="cart_popup--nohasproduct">
-              <div class="cart_popup_text">Chưa có sản phẩm</div>
-            </div>
-          </i>
+          <div class="cart">
+            <i class="fa-solid fa-cart-shopping main-bar_cart cart_haspopup ">
+              <!-- No cart -->
+              <div class="cart_popup">
+                <div class="cart_popup--no-cart navbar-item--dont-hover">
+                  <img src="https://sknhatthuongyen.vn/images/emptycart.png" alt="" class="cart_popup--img">
+                  <div class="cart_popup_text">Chưa có sản phẩm</div>
+                </div>
+              </div>
+            </i>
+            <span class="main-bar_badge">3</span>
+          </div>
+
         </div>
       </div>
     </header>
