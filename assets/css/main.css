@@ -73,11 +73,13 @@
   right: -10px;
   top: 0;
 }
-
+.navbar-item a{
+  text-decoration: none;
+}
 .navbar-item_icon {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: var(--white-color);
-  margin-right: 4px;
+  margin-left: 3px;
 }
 
 .navbar-item--userinfo {
@@ -88,14 +90,14 @@
 .navbar-item_img {
   height: 25px;
   width: 25px;
-  border-radius: 11px;
+  border-radius: 25px;
   object-fit: cover;
   top: 7px;
   position: relative;
 }
 
 .navbar-item_name {
-  margin: 0px 5px;
+  margin: 0px 2px;
 }
 
 .navbar-item_option {
@@ -104,11 +106,12 @@
   right: 0;
   width: 150px;
   background-color: var(--white-color);
+  border-radius: 2px;
   border: 1px solid #D3D3D3;
   color: var(--text-color);
   z-index: 1;
   display: none;
-  transform-origin: calc(100% - 20px) top;
+  transform-origin: calc(100% - 32px) top;
   animation: nofifyPopup ease-in 0.2s;
   will-change: opacity, transform;
   box-shadow: var(--box-shadow);
@@ -391,12 +394,13 @@
   top: 25px;
   right: 0;
   width: 404px;
+  border-radius: 2px;
   background-color: var(--white-color);
   border: 1px solid #D3D3D3;
   color: var(--text-color);
   z-index: 1;
   display: none;
-  transform-origin: calc(100% - 20px) top;
+  transform-origin: calc(100% - 32px) top;
   animation: nofifyPopup ease-in 0.2s;
   will-change: opacity, transform;
   box-shadow: var(--box-shadow);
@@ -508,11 +512,12 @@
   right: 0;
   width: 200px;
   background-color: var(--white-color);
+  border-radius: 2px;
   border: 1px solid #D3D3D3;
   color: var(--text-color);
   z-index: 1;
   display: none;
-  transform-origin: calc(100% - 20px) top;
+  transform-origin: calc(100% - 32px) top;
   animation: nofifyPopup ease-in 0.2s;
   will-change: opacity, transform;
   box-shadow: var(--box-shadow);
@@ -573,24 +578,25 @@
   z-index: 1;
   top: -20px;
   right: 0;
-  transform-origin: calc(100% - 20px) top;
+  transform-origin: calc(100% - 32px) top;
 }
 
 .cart_popup {
   display: none;
   width: 400px;
-  top: 85%;
-  right: 10px;
+  top: 82%;
+  right: 6px;
   position: absolute;
   background-color: var(--white-color);
-  border: 1px solid #D3D3D3;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--text-color);
   z-index: 1;
   animation: nofifyPopup ease-in 0.2s;
   will-change: opacity, transform;
   box-shadow: var(--box-shadow);
   flex-direction: column;
-  transform-origin: calc(100% - 20px) top;
+  transform-origin: calc(100% - 32px) top;
   cursor: default !important;
   font-family: 'Roboto', sans-serif;
 }
