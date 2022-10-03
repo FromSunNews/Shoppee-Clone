@@ -5,11 +5,11 @@
   --text-color: #333;
   --border-color: #dbdbdb;
   --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-
+  --gold-color: rgb(229, 204, 10);
 
   --header-height: 120px;
   --navbar-height: 34px;
-  --mainbar-height: calc(var(--header-height) - var(--navbar-height));
+  --mainbar-height: calc(var(--header-height) - var(--navbar-height) - 5px);
   --search-btn-width: 60px;
 }
 
@@ -34,23 +34,28 @@ html {
   width: 100%;
 }
 
-.grid_row {
+.grid__row {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -12px;
-  margin-right: -12px;
+  margin-left: -5px;
+  margin-right: -5px;
 }
 
 /* Test */
-grid__column-2 {
-  padding-left: 12px;
-  padding-right: 12px;
+.grid__column-2 {
+  padding-left: 5px;
+  padding-right: 5px;
   width: 16.6667%;
 }
-grid__column-10 {
-  padding-left: 12px;
-  padding-right: 12px;
+.grid__column-10 {
+  padding-left: 5px;
+  padding-right: 5px;
   width: 83.3334%;
+}
+.grid__column-10-2{
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 20%;
 }
 /* Animation Qrcode popup */
 @keyframes fadeIn {
@@ -85,4 +90,53 @@ grid__column-10 {
     transform: scale(1);
     opacity: 1;
   }
+}
+/* section  */
+.select-input{
+  height: 34px;
+  min-width: 200px;
+  padding: 0 12px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white-color);
+  position: relative;
+  z-index: 1;
+}
+.select-input:hover .select-input__list{
+  display: block;
+}
+.select-input__label{
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+.select-input__icon{
+  font-size: 1.4rem;
+  color: rgb(131, 131, 131);
+  position: relative;
+  top: 1px;
+}
+.select-input__list{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25px;
+  border-radius: 2px;
+  background-color: var(--white-color);
+  padding: 8px 12px;
+  list-style: none;
+  display: none;
+  box-shadow: var(--box-shadow);
+}
+.select-input__link{
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  display: block;
+  padding: 6px 0;
+  cursor: pointer;
+}
+.select-input__link:hover{
+  color: var(--primary-color);
 }
